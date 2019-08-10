@@ -39,7 +39,7 @@
 
 - 用户去重: 使用MapState来存储用户id
 
-- 区分每天不同的State: 通过获取窗口起始或者终止时间来获得当天日志，并作为state名称的一部分，这样每天会独立生成一个State
+- 区分每天不同的State: 通过获取窗口起始或者终止时间来获得当天日期(yyyymmdd)，并作为state名称的一部分，这样每天会独立生成一个State
 
 - 处理过期State：配置State的[TTL( time-to-live)](https://ci.apache.org/projects/flink/flink-docs-stable/dev/stream/state/state.html#state-time-to-live-ttl)
 
